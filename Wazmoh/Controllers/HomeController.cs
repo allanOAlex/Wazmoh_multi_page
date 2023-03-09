@@ -15,6 +15,7 @@ namespace Wazmoh.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.ActionName = "Index";
             return View();
         }
 

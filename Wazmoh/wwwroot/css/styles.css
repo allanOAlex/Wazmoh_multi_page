@@ -11342,6 +11342,7 @@ html {
 }
 
 .section-companydetails {
+    padding-top: 3rem!important;
     padding-bottom: 5rem!important;
 }
 
@@ -11372,13 +11373,13 @@ strong {
 
 .staff {
     max-width: 250px;
-    max-height: 250px;
+    max-height: 150px!important;
 }
 
 .client {
-    max-width: 100px !important;
-    max-height: 100px !important;
-    min-height: 100px !important;
+    max-width: 70px !important;
+    max-height: 70px !important;
+    min-height: 70px !important;
 }
 
 .img-fluid{
@@ -11566,14 +11567,16 @@ section.cta:before {
       font-size: 1rem;
   }
 
-    .section-companydetails {
-        /*padding-bottom: 7rem!important;*/
-        font-size: 12px !important;
-    }
+ .shared-footer {
+     font-size: 12px;
+ }
 
-    footer{
-        font-size:10px!important;
-    }
+ .section-companydetails {
+     /*padding-bottom: 7rem!important;*/
+     font-size: 12px !important;
+ }
+
+    
 }
 
 @media (min-width: 576px) {
