@@ -1,6 +1,6 @@
 ﻿
 /* Stop video playing when the MODAL is being closed (has finished closing) */
-jQuery(document).ready(function () {
+(document).ready(function () {
     $('#galleryModal').on('hidden.bs.modal', function (e) {
         $('#galleryModal iframe').each(function () {
             var videoURL = $(this).attr('src');
@@ -12,7 +12,7 @@ jQuery(document).ready(function () {
 
 
 /* Stop video playing when the CAROUSEL slides to another element */
-jQuery(document).ready(function () {
+(document).ready(function () {
     $('#galleryCarousel').on('slid.bs.carousel', function (e) {
         var currentSlide = $('#galleryCarousel .carousel-item').eq(e.from);
         var currentSlideEmbed = currentSlide.children('.embed-responsive');
