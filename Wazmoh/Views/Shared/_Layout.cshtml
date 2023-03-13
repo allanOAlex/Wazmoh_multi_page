@@ -27,6 +27,7 @@
     <!-- Custom-->
     <link href="~/css/animations.css" rel="stylesheet" />
 
+
 </head>
 <body id="page-top">
 
@@ -42,7 +43,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item"><a class="nav-link me-lg-3 @ActiveClass("Home", "Company")" asp-controller="Home" asp-action="Company">Company</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3 @ActiveClass("Home", "Company")" asp-controller="Home" asp-action="Company">Home</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3 @ActiveClass("Home", "Services")" asp-controller="Home" asp-action="Services">Services</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3 @ActiveClass("Home", "Gallery")" asp-controller="Home" asp-action="Gallery">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3 @ActiveClass("Home", "Blog")" asp-controller="Home" asp-action="Blog">Blog</a></li>
@@ -50,7 +51,7 @@
                 <button class="btn  rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal" style="background-color:#E91E63; color:white;">
                     <span class="d-flex align-items-center">
                         <i class="bi-chat-text-fill me-2"></i>
-                        <span class="small">Get In Touch</span>
+                        <span class="small">Send Feedback</span>
                     </span>
                 </button>
             </div>
@@ -64,7 +65,7 @@
     </div>
     <br />
 
-    <!-- Company Details Section-->
+    <!-- Company Details Section -->
     <section id="clients" class="bg-dark section-companydetails" >
         <div class="container px-5">
             <article class=" text-muted d-flex justify-content-start mt-2 mb-5 mb-lg-0">
@@ -94,32 +95,24 @@
                         </div>
                         <div class="d-flex flex-row flex-wrap">
                             <div class="text-center m-2">
-                                <img src="~/assets/img/logo1.jpeg" class="rounded-circle img-fluid client mb-2" alt="...">
+                                <img src="~/assets/img/clients/Booker_.jpg" class="rounded-circle img-fluid client mb-2" alt="...">
                                 <p class="font-alt">Booker Academy</p>
                             </div>
                             <div class="text-center m-2">
-                                <img src="~/assets/img/logo2.png" class="rounded-circle img-fluid client mb-2" alt="...">
+                                <img src="~/assets/img/clients/St_Marys_.png" class="rounded-circle img-fluid client mb-2" alt="...">
                                 <p class="font-alt">St Mary’s Hospital Mumias</p>
                             </div>
                             <div class="text-center m-2">
-                                <img src="~/assets/img/logo4.jpg" class="rounded-circle img-fluid client mb-2" alt="...">
+                                <img src="~/assets/img/clients/logo3.webp" class="rounded-circle img-fluid client mb-2" alt="...">
                                 <p class="font-alt">St Anne’s Mumias Girls Primary School</p>
                             </div>
                             <div class="text-center m-2">
-                                <img src="~/assets/img/logo5.jpg" class="rounded-circle img-fluid client mb-2" alt="...">
+                                <img src="~/assets/img/clients/bg_county.png" class="rounded-circle img-fluid client mb-2" alt="...">
                                 <p class="font-alt">Bungoma County</p>
                             </div>
                             <div class="text-center m-2">
-                                <img src="~/assets/img/logo5.jpg" class="rounded-circle img-fluid client mb-2" alt="...">
+                                <img src="~/assets/img/clients/sukari_sacco.jpg" class="rounded-circle img-fluid client mb-2" alt="...">
                                 <p class="font-alt">Sukari Sacco Limited</p>
-                            </div>
-                            <div class="text-center m-2">
-                                <img src="~/assets/img/logo5.jpg" class="rounded-circle img-fluid client mb-2" alt="...">
-                                <p class="font-alt">Bungoma County</p>
-                            </div>
-                            <div class="text-center m-2">
-                                <img src="~/assets/img/logo5.jpg" class="rounded-circle img-fluid client mb-2" alt="...">
-                                <p class="font-alt">Bungoma County</p>
                             </div>
                         </div>
 
@@ -129,66 +122,69 @@
         </div>
     </section>
     
+    <!-- Footer -->
     <footer class="text-center text-secondary fixed-bottom pt-2 mt-3 d-flex justify-content-center shared-footer" style="background-color: #f1f1f1;">
         <div class="container p-0">
             <div class="row">
                 <div class="col-xs-12 col-md-4 my-1 ">
                     &copy; <span id="year"></span> -
-                    <a href="#" style="color:dodgerblue;">Wazmoh Business Solution</a>
+                    <a style="color:dodgerblue;" target="_blank" asp-controller="Home" asp-action="AuthorProfile">TechPop</a>
                 </div>
 
                 <div class="col-xs-12 col-md-4 my-1 ">
                     <!-- WhatsApp -->
                     <a class="btn btn-link btn-floating btn-sm text-dark m-1"
-                       href="#!"
                        role="button"
-                       data-mdb-ripple-color="dark">
-                        <i class="fa-brands fa-whatsapp"></i>
+                       data-mdb-ripple-color="dark" href="#!" target="_blank" >
+                        <i class="fa-brands fa-whatsap href=" #!"p"></i>
                     </a>
 
                     <!-- Facebook -->
                     <a class="btn btn-link btn-floating btn-sm text-dark m-1"
-                       href="#!"
                        role="button"
-                       data-mdb-ripple-color="dark">
+                       data-mdb-ripple-color="dark" href="#!" >
                         <i class="fa-brands fa-facebook"></i>
                     </a>
 
                     <!-- Twitter -->
                     <a class="btn btn-link btn-floating btn-sm text-dark m-1"
-                       href="#!"
                        role="button"
-                       data-mdb-ripple-color="dark">
+                       data-mdb-ripple-color="dark" href="#!" >
                         <i class="fa-brands fa-twitter"></i>
                     </a>
 
                     <!-- Instagram -->
                     <a class="btn btn-link btn-floating btn-sm text-dark m-1"
-                       href="#!"
                        role="button"
-                       data-mdb-ripple-color="dark">
+                       data-mdb-ripple-color="dark" href="#!" >
                         <i class="fa-brands fa-instagram"></i>
                     </a>
 
                     <!-- Linkedin -->
                     <a class="btn btn-link btn-floating btn-sm text-dark m-1"
-                       href="#!"
                        role="button"
-                       data-mdb-ripple-color="dark">
+                       data-mdb-ripple-color="dark" href="#!" >
                         <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <!-- Email -->
+                    <a class="btn btn-link btn-floating btn-sm text-dark m-1"
+                       role="button"
+                       data-mdb-ripple-color="dark" target="_blank" asp-controller="Home" asp-action="Email">
+                        <i class="fa-solid fa-envelope"></i>
                     </a>
 
                 </div>
 
                 <div class="col-xs-12 col-md-4 my-1 ">
-                    <p class="text-secondary"> Designed by <a href="https://github.com/allanOAlex" style="color:goldenrod;">Allan O. Alex</a></p>
+                   <p class="text-secondary"> Designed by <a style="color:goldenrod;" target="_blank" asp-controller="Home" asp-action="GitHub">Allan O. Alex</a></p>
                 </div>
             </div>
         </div>
 
     </footer>
 
-    <!-- Feedback Modal-->
+    <!-- Feedback Modal -->
     <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -197,43 +193,28 @@
                     <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body border-0 p-4">
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
-                    <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
                     <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                        <!-- Name input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
                             <label for="name">Full name</label>
                             <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                         </div>
-                        <!-- Email address input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
                             <label for="email">Email address</label>
                             <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                             <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                         </div>
-                        <!-- Phone number input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
                             <label for="phone">Phone number</label>
                             <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                         </div>
-                        <!-- Message input-->
                         <div class="form-floating mb-3">
                             <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
                             <label for="message">Message</label>
                             <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                         </div>
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
                         <div class="d-none" id="submitSuccessMessage">
                             <div class="text-center mb-3">
                                 <div class="fw-bolder">Form submission successful!</div>
@@ -242,13 +223,8 @@
                                 <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                             </div>
                         </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
                         <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                        <!-- Submit Button-->
-                        <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+                        <div class="d-grid"><button class="btn btn-primary rounded-pill btn-sm disabled" id="submitButton" type="submit" asp-controller="Home" asp-action="SendFeedback">Submit</button></div>
                     </form>
                 </div>
             </div>
@@ -261,8 +237,9 @@
     <script src="~/js/scripts.js"></script>
     <script src="~/lib/font-awesome/js/all.js"></script>
     <script src="~/lib/font-awesome/js/all.min.js"></script>
-    <script src="~/js/services.js"></script>
+    @*<script src="~/js/services.js"></script>*@
     <script src="~/js/helpers.js"></script>
+    @*<script src="~/js/gallery.js"></script>*@
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
