@@ -5117,13 +5117,13 @@ nav a.active {
 }
 
 .list-group-item {
-  position: relative;
-  display: block;
-  padding: 0.5rem 1rem;
-  color: #212529;
-  text-decoration: none;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+    position: relative;
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #212529;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
 }
 .list-group-item:first-child {
   border-top-left-radius: inherit;
@@ -11341,6 +11341,21 @@ html {
   padding-bottom: 4rem;
 }
 
+.section-companydetails {
+    padding-top: 3rem!important;
+    padding-bottom: 5rem!important;
+}
+
+.company-detail-key{
+    text-transform:uppercase!important;
+    color:white!important;
+}
+
+.company-detail-value {
+    text-transform:capitalize !important;
+    font-size:1rem;
+}
+
 .section-title {
     text-align: center;
     text-transform: uppercase;
@@ -11358,13 +11373,13 @@ strong {
 
 .staff {
     max-width: 250px;
-    max-height: 250px;
+    max-height: 150px!important;
 }
 
 .client {
-    max-width: 100px !important;
-    max-height: 100px !important;
-    min-height: 100px !important;
+    max-width: 70px !important;
+    max-height: 70px !important;
+    min-height: 70px !important;
 }
 
 .img-fluid{
@@ -11381,6 +11396,9 @@ strong {
     margin-right: 20rem;
 }
 
+.white-space{
+    height:25px!important;
+}
 
 .staff-container {
     font-size: 15px;
@@ -11541,11 +11559,24 @@ section.cta:before {
   max-width: 10rem;
 }
 
+
+
 @media (min-width: 280px) {
     
   .fw-bold {
       font-size: 1rem;
   }
+
+ .shared-footer {
+     font-size: 12px;
+ }
+
+ .section-companydetails {
+     /*padding-bottom: 7rem!important;*/
+     font-size: 12px !important;
+ }
+
+    
 }
 
 @media (min-width: 576px) {

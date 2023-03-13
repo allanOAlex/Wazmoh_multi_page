@@ -24,12 +24,9 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="~/css/styles.css" rel="stylesheet" />
 
-    <style>
-
-    </style>
-
 </head>
 <body id="page-top">
+
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div class="container px-5">
@@ -50,12 +47,13 @@
                 <button class="btn  rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal" style="background-color:#E91E63; color:white;">
                     <span class="d-flex align-items-center">
                         <i class="bi-chat-text-fill me-2"></i>
-                        <span class="small">Send Feedback</span>
+                        <span class="small">Get In Touch</span>
                     </span>
                 </button>
             </div>
         </div>
     </nav>
+
     <div class="container mb-5">
         <main role="main" class="pb-3 pt-5 " >
             @RenderBody()
@@ -63,14 +61,77 @@
     </div>
     <br />
 
-    
+    <!-- Company Details Section-->
+    <section id="clients" class="bg-dark section-companydetails" >
+        <div class="container px-5">
+            <article class=" text-muted d-flex justify-content-start mt-2 mb-5 mb-lg-0">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md">
+                        <div class="section-title text-info" style="text-align: left; text-transform:uppercase; font-size:1rem;font-weight:bold; margin-bottom: 2rem !important;">
+                            Get In Touch With Us
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class=" mb-2">
+                                <p class="company-detail-key "><i class="fa fa-phone" aria-hidden="true"></i> Phone</p>
+                                <p class="company-detail-value " style="font-size:13px!important;">+254 713 199 050 / +254 725 857 094</p>
+                            </div>
+                            <div class="mb-2">
+                                <p class="company-detail-key"><i class="fa fa-map-marker" aria-hidden="true"></i> Location</p>
+                                <p class="company-detail-value">
+                                    express building 2nd floor, room 9. <br /> 
+                                    moi avenue, next to petro petrol station. <br />
+                                    P. O. box 3325 – 80100 mombasa
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md">
+                        <div class="section-title text-info" style="text-align: left; text-transform:uppercase; font-size:1rem;font-weight:bold; margin-bottom: 2rem !important;">
+                            Our Clients
+                        </div>
+                        <div class="d-flex flex-row flex-wrap">
+                            <div class="text-center m-2">
+                                <img src="~/assets/img/logo1.jpeg" class="rounded-circle img-fluid client mb-2" alt="...">
+                                <p class="font-alt">Booker Academy</p>
+                            </div>
+                            <div class="text-center m-2">
+                                <img src="~/assets/img/logo2.png" class="rounded-circle img-fluid client mb-2" alt="...">
+                                <p class="font-alt">St Mary’s Hospital Mumias</p>
+                            </div>
+                            <div class="text-center m-2">
+                                <img src="~/assets/img/logo4.jpg" class="rounded-circle img-fluid client mb-2" alt="...">
+                                <p class="font-alt">St Anne’s Mumias Girls Primary School</p>
+                            </div>
+                            <div class="text-center m-2">
+                                <img src="~/assets/img/logo5.jpg" class="rounded-circle img-fluid client mb-2" alt="...">
+                                <p class="font-alt">Bungoma County</p>
+                            </div>
+                            <div class="text-center m-2">
+                                <img src="~/assets/img/logo5.jpg" class="rounded-circle img-fluid client mb-2" alt="...">
+                                <p class="font-alt">Sukari Sacco Limited</p>
+                            </div>
+                            <div class="text-center m-2">
+                                <img src="~/assets/img/logo5.jpg" class="rounded-circle img-fluid client mb-2" alt="...">
+                                <p class="font-alt">Bungoma County</p>
+                            </div>
+                            <div class="text-center m-2">
+                                <img src="~/assets/img/logo5.jpg" class="rounded-circle img-fluid client mb-2" alt="...">
+                                <p class="font-alt">Bungoma County</p>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    
     <footer class="text-center text-secondary fixed-bottom pt-2 mt-3 d-flex justify-content-center shared-footer" style="background-color: #f1f1f1;">
         <div class="container p-0">
             <div class="row">
                 <div class="col-xs-12 col-md-4 my-1 ">
                     &copy; <span id="year"></span> -
-                    <a href="https://www.tuomokepamoja.africa/" style="color:dodgerblue;">Wazmoh Business Solution</a>
+                    <a href="#" style="color:dodgerblue;">Wazmoh Business Solution</a>
                 </div>
 
                 <div class="col-xs-12 col-md-4 my-1 ">
@@ -106,22 +167,6 @@
                         <i class="fa-brands fa-instagram"></i>
                     </a>
 
-                    <!-- Email -->
-                    <a class="btn btn-link btn-floating btn-sm text-dark m-1"
-                       href="#!"
-                       role="button"
-                       data-mdb-ripple-color="dark">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
-
-                    <!-- Google -->
-                    <a class="btn btn-link btn-floating btn-sm text-dark m-1"
-                       href="https://daisy@tuomokepamoja.africa"
-                       role="button"
-                       data-mdb-ripple-color="dark">
-                        <i class="fa-brands fa-google"></i>
-                    </a>
-
                     <!-- Linkedin -->
                     <a class="btn btn-link btn-floating btn-sm text-dark m-1"
                        href="#!"
@@ -130,18 +175,10 @@
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
 
-                    <!-- Github -->
-                    <a class="btn btn-link btn-floating btn-sm text-dark m-1"
-                       href="#!"
-                       role="button"
-                       data-mdb-ripple-color="dark">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-
                 </div>
 
                 <div class="col-xs-12 col-md-4 my-1 ">
-                    <p class="text-secondary"> Designed by <a href="#" style="color:goldenrod;">Allan O. Alex</a></p>
+                    <p class="text-secondary"> Designed by <a href="https://github.com/allanOAlex" style="color:goldenrod;">Allan O. Alex</a></p>
                 </div>
             </div>
         </div>
