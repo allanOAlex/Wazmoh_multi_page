@@ -11494,8 +11494,9 @@ strong {
 }
 
 section.cta {
+    height:100vh;
     position: relative;
-    padding: 15rem 0;
+    padding: 15rem 3rem;
     margin-top:3.5rem;
     background-image: url("https://source.unsplash.com/5g41N3uRPf8/1500x800");
     background-position: center;
