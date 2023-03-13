@@ -2,7 +2,9 @@
 
 .gallery-box {
     padding-top: 30px;
-    
+    max-width: 300px !important;
+    min-height: 300px !important;
+    max-height: 300px !important;
 }
 
     .gallery-box img {
