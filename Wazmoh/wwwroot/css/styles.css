@@ -11521,6 +11521,15 @@ section.cta:before {
   background: rgba(0, 0, 0, 0.5);
 }
 
+/* Hide all the sections except the active one */
+section {
+    display: none;
+}
+
+    section.active {
+        display: block;
+    }
+
 .icon-feature {
   font-size: 4rem;
 }

@@ -21,6 +21,11 @@ namespace Wazmoh.Controllers
             return View();
         }
 
+        public IActionResult Home()
+        {
+            return View();
+        }
+
         public IActionResult Company()
         {
             return View();

@@ -11,8 +11,8 @@
 
     .gallery-box .gallery-image {
         max-width: 300px !important;
-        max-height: 400px !important;
-        min-height: 400px !important;
+        min-height: 300px !important;
+        max-height: 300px !important;
     }
 
 .carousel .carousel-indicators {

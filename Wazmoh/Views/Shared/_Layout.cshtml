@@ -27,6 +27,7 @@
     <!-- Custom-->
     <link href="~/css/animations.css" rel="stylesheet" />
     <link href="~/css/gallery.css" rel="stylesheet" />
+    <link href="~/css/animate.css" rel="stylesheet" />
 
 
 </head>
@@ -35,8 +36,8 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div class="container px-5">
-            <a class="navbar-brand fw-bold text-center" asp-controller="Home" asp-action="Index">
-                <img src="~/assets/img/navbrand.jpg" alt="Logo" width="100" height="40"> 
+            <a class="navbar-brand fw-bold text-center" asp-controller="Home" asp-action="Home">
+                <img src="~/assets/img/navbrand.jpg" alt="Logo" width="100" height="40" class="zoomIn">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
@@ -44,10 +45,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item"><a class="nav-link me-lg-3 @ActiveClass("Home", "Company")" asp-controller="Home" asp-action="Company">Home</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3 @ActiveClass("Home", "Services")" asp-controller="Home" asp-action="Services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3 @ActiveClass("Home", "Gallery")" asp-controller="Home" asp-action="Gallery">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3 @ActiveClass("Home", "Blog")" asp-controller="Home" asp-action="Blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3 fade-in-right scroll-link" href="#company">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3 fade-in-right scroll-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3 fade-in-right scroll-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3 fade-in-right scroll-link" href="#blog">Blog</a></li>
                 </ul>
                 <button class="btn  rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal" style="background-color:#E91E63; color:white;">
                     <span class="d-flex align-items-center">
@@ -241,6 +242,7 @@
     @*<script src="~/js/services.js"></script>*@
     <script src="~/js/helpers.js"></script>
     @*<script src="~/js/gallery.js"></script>*@
+    <script src="~/js/animations.js"></script>
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
