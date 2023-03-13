@@ -24,9 +24,9 @@
     animation-duration: 2s;
 }
 
-.fade-in.active {
+/*.fade-in.active {
     opacity: 1;
-}
+}*/
 
 .fade-in-left {
     animation: fadeInLeft 1s ease-in-out;
@@ -48,9 +48,9 @@
     animation: slideInLeft 1s ease-in-out;
 }
 
-.slide-in-left.active {
+/*.slide-in-left.active {
     transform: translateX(0);
-}
+}*/
 
 .slide-in-right {
     animation: slideInRight 1s ease-in-out;
@@ -60,9 +60,9 @@
     animation: slideInTop 1s ease-in-out;
 }
 
-    .slide-in-top.active {
+    /*.slide-in-top.active {
         transform: scale(1);
-    }
+    }*/
 
 .slide-in-bottom {
     animation: slideInBottom 1s ease-in-out;
@@ -88,9 +88,9 @@
     animation-fill-mode: forwards;
 }
 
-.zoom-in.active {
+/*.zoom-in.active {
     transform: scale(1);
-}
+}*/
 
 .zoomInPerspective {
     animation-name: zoomInPerspective;
