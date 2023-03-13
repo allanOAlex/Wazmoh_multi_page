@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Net.Mail;
+using System.Xml.Linq;
 using Wazmoh.Models;
 
 namespace Wazmoh.Controllers
@@ -83,6 +85,41 @@ namespace Wazmoh.Controllers
         {
             string url = "mailto:allan.alex0803@gmail.com";
             return Redirect(url);
+        }
+
+        public IActionResult SendFeedback(string fullName, string email, string phone, string message)
+        {
+            try
+            {
+                MailMessage mailMessage = new MailMessage();
+                mailMessage.From = new MailAddress("allan.alex0803@gmail.com");
+                mailMessage.To.Add("allan.alex0803@gmail.com");
+                mailMessage.Subject = "Feedback from " + fullName;
+                mailMessage.Body =
+                    $"Name: {fullName} \n" +
+                    $"Email: {email} \n" +
+                    $"Contact Number: {phone} \n" +
+                    $"\n" +
+                    $"{message}" +
+                    $"\n";
+
+
+                SmtpClient smtpClient = new SmtpClient();
+                smtpClient.Host = "smtp.example.com";
+                smtpClient.Port = 587;
+                smtpClient.UseDefaultCredentials = false;
+                smtpClient.Credentials = new System.Net.NetworkCredential("username", "password");
+                smtpClient.EnableSsl = true;
+
+                smtpClient.Send(mailMessage);
+
+                return RedirectToAction("ThankYou");
+            }
+            catch (Exception ex)
+            {
+                ViewBag.ErrorMessage = "An error occurred while sending your feedback: " + ex.Message;
+                return View();
+            }
         }
 
         public IActionResult GitHub()

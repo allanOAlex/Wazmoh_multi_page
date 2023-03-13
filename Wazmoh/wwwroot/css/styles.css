@@ -11322,7 +11322,11 @@ html {
 }
 
 .bg-gradient-primary-to-secondary {
-  background: linear-gradient(45deg, #2937f0, #9f1ae2) !important;
+    background: linear-gradient(45deg, #0B5394, #3D85C6) !important; 
+}
+
+.modal-header-bg {
+    background-color: #3D85C6 !important;
 }
 
 .font-alt {
